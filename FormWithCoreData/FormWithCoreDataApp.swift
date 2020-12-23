@@ -2,7 +2,7 @@
 //  FormWithCoreDataApp.swift
 //  FormWithCoreData
 //
-//  Created by N., Mohankumar (Cognizant) on 23/12/20.
+//  Created on 23/12/20.
 //
 
 import SwiftUI
@@ -13,8 +13,7 @@ struct FormWithCoreDataApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            GarmentList().environmentObject(GarmentViewModel()).environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

@@ -2,7 +2,7 @@
 //  FormWithCoreDataTests.swift
 //  FormWithCoreDataTests
 //
-//  Created by N., Mohankumar (Cognizant) on 23/12/20.
+//  Created on 23/12/20.
 //
 
 import XCTest
@@ -19,6 +19,9 @@ class FormWithCoreDataTests: XCTestCase {
     }
 
     func testExample() throws {
+        let model = GarmentViewModel()
+        model.currentGarmentName = ""
+//        XCTAssert(model.currentGarmentName.count > 0)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

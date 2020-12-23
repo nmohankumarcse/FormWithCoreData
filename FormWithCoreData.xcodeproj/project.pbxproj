@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392768C425939D8900ACCF08 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392768C325939D8900ACCF08 /* SwiftUIView.swift */; };
+		392768C82593B39400ACCF08 /* GarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */; };
+		392768CC2593B49300ACCF08 /* FormWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3955E79125937B9100EFFCAE /* FormWithCoreData.xcdatamodeld */; };
+		392768D02593B49900ACCF08 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78F25937B9100EFFCAE /* Persistence.swift */; };
 		3955E78725937B8D00EFFCAE /* FormWithCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */; };
-		3955E78925937B8D00EFFCAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78825937B8D00EFFCAE /* ContentView.swift */; };
+		3955E78925937B8D00EFFCAE /* GarmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78825937B8D00EFFCAE /* GarmentList.swift */; };
 		3955E78B25937B9100EFFCAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3955E78A25937B9100EFFCAE /* Assets.xcassets */; };
 		3955E78E25937B9100EFFCAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3955E78D25937B9100EFFCAE /* Preview Assets.xcassets */; };
 		3955E79025937B9100EFFCAE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78F25937B9100EFFCAE /* Persistence.swift */; };
 		3955E79325937B9100EFFCAE /* FormWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3955E79125937B9100EFFCAE /* FormWithCoreData.xcdatamodeld */; };
 		3955E79E25937B9100EFFCAE /* FormWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E79D25937B9100EFFCAE /* FormWithCoreDataTests.swift */; };
 		3955E7A925937B9200EFFCAE /* FormWithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7A825937B9200EFFCAE /* FormWithCoreDataUITests.swift */; };
+		3955E7C025937D4800EFFCAE /* GarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */; };
+		3955E7C525937F7600EFFCAE /* AddGarmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7C425937F7600EFFCAE /* AddGarmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		392768C325939D8900ACCF08 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		3955E78325937B8D00EFFCAE /* FormWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWithCoreDataApp.swift; sourceTree = "<group>"; };
-		3955E78825937B8D00EFFCAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3955E78825937B8D00EFFCAE /* GarmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentList.swift; sourceTree = "<group>"; };
 		3955E78A25937B9100EFFCAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3955E78D25937B9100EFFCAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3955E78F25937B9100EFFCAE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +56,8 @@
 		3955E7A425937B9200EFFCAE /* FormWithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormWithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3955E7A825937B9200EFFCAE /* FormWithCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWithCoreDataUITests.swift; sourceTree = "<group>"; };
 		3955E7AA25937B9200EFFCAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentViewModel.swift; sourceTree = "<group>"; };
+		3955E7C425937F7600EFFCAE /* AddGarmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */,
-				3955E78825937B8D00EFFCAE /* ContentView.swift */,
+				3955E78825937B8D00EFFCAE /* GarmentList.swift */,
+				392768C325939D8900ACCF08 /* SwiftUIView.swift */,
+				3955E7C425937F7600EFFCAE /* AddGarmentView.swift */,
+				3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */,
 				3955E78A25937B9100EFFCAE /* Assets.xcassets */,
 				3955E78F25937B9100EFFCAE /* Persistence.swift */,
 				3955E79425937B9100EFFCAE /* Info.plist */,
@@ -266,9 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3955E79325937B9100EFFCAE /* FormWithCoreData.xcdatamodeld in Sources */,
+				392768C425939D8900ACCF08 /* SwiftUIView.swift in Sources */,
 				3955E79025937B9100EFFCAE /* Persistence.swift in Sources */,
-				3955E78925937B8D00EFFCAE /* ContentView.swift in Sources */,
+				3955E7C025937D4800EFFCAE /* GarmentViewModel.swift in Sources */,
+				3955E78925937B8D00EFFCAE /* GarmentList.swift in Sources */,
 				3955E78725937B8D00EFFCAE /* FormWithCoreDataApp.swift in Sources */,
+				3955E7C525937F7600EFFCAE /* AddGarmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392768CC2593B49300ACCF08 /* FormWithCoreData.xcdatamodeld in Sources */,
+				392768D02593B49900ACCF08 /* Persistence.swift in Sources */,
 				3955E79E25937B9100EFFCAE /* FormWithCoreDataTests.swift in Sources */,
+				392768C82593B39400ACCF08 /* GarmentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

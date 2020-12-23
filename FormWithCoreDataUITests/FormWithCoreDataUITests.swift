@@ -2,7 +2,7 @@
 //  FormWithCoreDataUITests.swift
 //  FormWithCoreDataUITests
 //
-//  Created by N., Mohankumar (Cognizant) on 23/12/20.
+//  Created on 23/12/20.
 //
 
 import XCTest
@@ -24,9 +24,14 @@ class FormWithCoreDataUITests: XCTestCase {
 
     func testExample() throws {
         // UI tests must launch the application that they test.
+        
         let app = XCUIApplication()
-        app.launch()
-
+        sleep(3)
+        app.navigationBars["List"].buttons["plus"].tap()
+        app.textFields["Enter name"].tap()
+        app.navigationBars["ADD"].buttons["Save"].tap()
+        
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
