@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		392768C425939D8900ACCF08 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392768C325939D8900ACCF08 /* SwiftUIView.swift */; };
 		392768C82593B39400ACCF08 /* GarmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */; };
 		392768CC2593B49300ACCF08 /* FormWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3955E79125937B9100EFFCAE /* FormWithCoreData.xcdatamodeld */; };
 		392768D02593B49900ACCF08 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78F25937B9100EFFCAE /* Persistence.swift */; };
+		393B96D4259AD7DA000C351A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 393B96D6259AD7DA000C351A /* Localizable.strings */; };
 		3955E78725937B8D00EFFCAE /* FormWithCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */; };
 		3955E78925937B8D00EFFCAE /* GarmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E78825937B8D00EFFCAE /* GarmentList.swift */; };
 		3955E78B25937B9100EFFCAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3955E78A25937B9100EFFCAE /* Assets.xcassets */; };
@@ -41,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		392768C325939D8900ACCF08 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		393B96D5259AD7DA000C351A /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		393B96DB259AD8B2000C351A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3955E78325937B8D00EFFCAE /* FormWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormWithCoreDataApp.swift; sourceTree = "<group>"; };
 		3955E78825937B8D00EFFCAE /* GarmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentList.swift; sourceTree = "<group>"; };
@@ -110,7 +111,6 @@
 			children = (
 				3955E78625937B8D00EFFCAE /* FormWithCoreDataApp.swift */,
 				3955E78825937B8D00EFFCAE /* GarmentList.swift */,
-				392768C325939D8900ACCF08 /* SwiftUIView.swift */,
 				3955E7C425937F7600EFFCAE /* AddGarmentView.swift */,
 				3955E7BF25937D4800EFFCAE /* GarmentViewModel.swift */,
 				3955E78A25937B9100EFFCAE /* Assets.xcassets */,
@@ -118,6 +118,7 @@
 				3955E79425937B9100EFFCAE /* Info.plist */,
 				3955E79125937B9100EFFCAE /* FormWithCoreData.xcdatamodeld */,
 				3955E78C25937B9100EFFCAE /* Preview Content */,
+				393B96D6259AD7DA000C351A /* Localizable.strings */,
 			);
 			path = FormWithCoreData;
 			sourceTree = "<group>";
@@ -233,6 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"fr-CA",
 			);
 			mainGroup = 3955E77A25937B8D00EFFCAE;
 			productRefGroup = 3955E78425937B8D00EFFCAE /* Products */;
@@ -252,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3955E78E25937B9100EFFCAE /* Preview Assets.xcassets in Resources */,
+				393B96D4259AD7DA000C351A /* Localizable.strings in Resources */,
 				3955E78B25937B9100EFFCAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3955E79325937B9100EFFCAE /* FormWithCoreData.xcdatamodeld in Sources */,
-				392768C425939D8900ACCF08 /* SwiftUIView.swift in Sources */,
 				3955E79025937B9100EFFCAE /* Persistence.swift in Sources */,
 				3955E7C025937D4800EFFCAE /* GarmentViewModel.swift in Sources */,
 				3955E78925937B8D00EFFCAE /* GarmentList.swift in Sources */,
@@ -320,6 +322,18 @@
 			targetProxy = 3955E7A525937B9200EFFCAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		393B96D6259AD7DA000C351A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				393B96D5259AD7DA000C351A /* fr-CA */,
+				393B96DB259AD8B2000C351A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3955E7AB25937B9200EFFCAE /* Debug */ = {

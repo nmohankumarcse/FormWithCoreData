@@ -19,13 +19,24 @@ class FormWithCoreDataTests: XCTestCase {
     }
 
     func testExample() throws {
-        let model = GarmentViewModel()
-        model.currentGarmentName = ""
-//        XCTAssert(model.currentGarmentName.count > 0)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        checkValidName()
+//        checkInValidName()
+    }
+    
+    func checkValidName(){
+        let model = GarmentViewModel()
+        model.currentGarmentName = "T-shirt"
+        XCTAssert(model.isGarmentNameValid())
     }
 
+    func checkInValidName(){
+        let model = GarmentViewModel()
+        model.currentGarmentName = ""
+        XCTAssert(model.isGarmentNameValid())
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

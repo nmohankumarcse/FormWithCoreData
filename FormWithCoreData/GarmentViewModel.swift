@@ -24,6 +24,8 @@ class GarmentViewModel: ObservableObject {
         }
     }
     @Published var currentGarmentName : String = ""
+    @Published var errorMessage : String = ""
+    @Published var isInvalidName : Bool = false
     @Published var garments: [Garment] = []
     private var garmentResults: NSFetchedResultsController<Garment>?
 //    var garments: FetchedResults<Garment> { fetchRequest.wrappedValue }
@@ -62,11 +64,24 @@ class GarmentViewModel: ObservableObject {
     }
     
     func addGarment() {
-        let newGarment = Garment(context: viewContext)
-        newGarment.name = self.currentGarmentName
-        newGarment.createdTime = Date()
-        self.currentGarmentName = ""
-        saveAndRefresh()
+        isInvalidName = !isGarmentNameValid()
+        if !isInvalidName{
+            let newGarment = Garment(context: viewContext)
+            newGarment.name = self.currentGarmentName
+            newGarment.createdTime = Date()
+            self.currentGarmentName = ""
+            saveAndRefresh()
+        }
+    }
+    
+    func isGarmentNameValid() -> Bool{
+        if self.currentGarmentName.count > 0{
+            return true
+        }
+        else{
+            errorMessage = "Garment name should not be empty"
+            return false
+        }
     }
     
     func deleteGarments(offsets: IndexSet) {

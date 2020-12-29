@@ -20,7 +20,7 @@ struct GarmentList: View {
     @Environment(\.managedObjectContext) var viewContextt
     @EnvironmentObject var garmentViewModel : GarmentViewModel
     @State var isNavigated = false
-    
+    let ListKey: LocalizedStringKey = "List"
     init()
     {
         UITableView.appearance().tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Double.leastNonzeroMagnitude))
@@ -37,10 +37,15 @@ struct GarmentList: View {
                     Text("\(garment.name!)")
                 }
                 .onDelete(perform: garmentViewModel.deleteGarments)
-            }.padding(EdgeInsets(top: 0, leading: -20, bottom: 0, trailing: -20))
-            .navigationBarTitle("List")
+            }.sheet(isPresented: $isNavigated, content: {
+                AddGarmentView()
+            })
+            .padding(EdgeInsets(top: 0, leading: -20, bottom: 0, trailing: -20))
+            .navigationBarTitle(ListKey)
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading:EditButton(),trailing:AddButton(destination: AddGarmentView()))
+            .navigationBarItems(leading:EditButton(),trailing: Button(action: {isNavigated = true}, label: {
+                Image(systemName: "plus")
+            }))
         }
     }
 }
